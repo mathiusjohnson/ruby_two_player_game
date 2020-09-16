@@ -10,7 +10,6 @@ class Game
 	end
 
 	def next_round
-
 		puts "-------------------"
 		puts "\t round #: #{@round}"
 		puts "-------------------"
@@ -69,7 +68,7 @@ class Game
 				puts "sum: #{sum}"
 
 				if (answer.to_i == sum)
-					puts "the answer is right! good job."
+					puts "That is right! You live to see another day."
 					display_status
 				else
 					puts "#{@players[0].loses_life}"
@@ -95,6 +94,7 @@ class Game
 				puts "sum: #{sum}"
 
 				if (answer.to_i == sum)
+					puts "That is right! You live to see another day."
 						next_round
 				else
 					puts "life: #{@players[1].loses_life}"
